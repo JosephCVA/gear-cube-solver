@@ -1,0 +1,22 @@
+{
+  "name": "gear-cube-solver",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.26.1",
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "dev": "concurrently -n core,api,web -c auto \"pnpm -C packages/core dev\" \"pnpm -C apps/api dev\" \"pnpm -C apps/web dev\"",
+    "test": "pnpm -r test",
+    "format": "prettier -w .",
+    "format:check": "prettier -c ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "prettier": "^3.3.3",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.50.1",
+    "vitest": "^4.0.16"
+  }
+}
