@@ -8,9 +8,11 @@
     "lint": "eslint .",
     "start": "node dist/server.js",
     "build": "tsc -p tsconfig.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "gen:dataset": "tsx src/scripts/genDataset.ts"
   },
   "dependencies": {
+    "@fastify/cors": "^8.5.0",
     "@gear/core": "workspace:*",
     "fastify": "^4.28.1"
   },
